@@ -94,12 +94,13 @@ a {
 	width: 100%;
 	line-height: 150px;
 	text-align: center;
-/*	position: relative;*/
+	position: relative;
 }
 
 .hero .carouselContent {
 	position: absolute;
 	max-width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	top: 50%;
@@ -110,7 +111,7 @@ a {
 }
 
 .carouselContent li.active {
-	display: block;
+	display: inline-block;
 	position: static;
 }
 
@@ -135,7 +136,7 @@ a {
 	display: block;
 	text-align: center;
 	margin: 0 auto;
-	top: 75%;
+	top: 87%;
 }
 
 .carouselNav li {
@@ -165,7 +166,6 @@ a {
 
 img {
 	width: 95%;
-	margin-bottom: 20px;
 	background-color: #000;
 }
 
@@ -199,6 +199,7 @@ img {
 	color: #000;
 	font-size: 30px;
 	letter-spacing: 2px;
+	margin-top: 20px;
 }
 
 .projects article p {
@@ -215,7 +216,7 @@ img {
 	position: absolute;
 	display: inline-block;
 	width: 90%;
-	height: 85%;
+	height: 90%;
 	background-color: #f63c3c;
 	top: 4%;
 	left: 5%;
@@ -248,6 +249,7 @@ time {
 
 figure {
 	position: relative;
+	bottom: 20px;
 }
 
 .projects figcaption:hover {
@@ -340,4 +342,42 @@ body>footer {
 	font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	color: #8e8e8e;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 769px) {
+	h1 {
+		font-size: 80px;
+		line-height: 1.3;
+	}
+
+	.hero {
+		height: 700px;
+	}
+
+	.hero ul li p {
+		width: 85%;
+		font-size: 18px;
+	}
+
+	.projects h2 {
+		font-size: 30px;
+	}
+
+	.projects article h3 a{ 
+		font-size: 20px;
+	}
+
+	.projects article figcaption h4 {
+		margin-top: 15%;
+	}
+
+	.projects article figcaption p {
+		width: 100%;
+	}
+
+	.projects article p {
+		width: 90%;
+	}
 }
